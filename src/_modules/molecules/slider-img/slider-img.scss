@@ -1,0 +1,11 @@
+// slider-img styles
+.img{
+    height: 100%;
+    width: 100%;
+    float: left;
+        &__item{
+        height: 100%;
+        width: 100%;
+        @include backgroundCoverCenter;
+    }
+}

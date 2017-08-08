@@ -9,7 +9,7 @@ import $ from 'jquery';
 import pages from './../_data/pages.json';
 
 // Modules
-import Link from './../_modules/molecules/menu/menu';
+// import Link from './../_modules/molecules/menu/menu';
 
 // ------------------------------
 // Additional functionality
@@ -30,7 +30,7 @@ $(() => {
   // Common scripts
 
   // Home page scripts
-  if (currentPage === pages.home.name) {
-    new Link();
-  }
+  // if (currentPage === pages.home.name) {
+  //   new Link();
+  // }
 });

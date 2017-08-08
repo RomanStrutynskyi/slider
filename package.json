@@ -2,7 +2,10 @@
   "name": "Template",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "~3.1.1"
+    "jquery": "~3.1.1",
+    "nouislider": "^10.0.0",
+    "touchswipe": "^1.6.0",
+    "wnumb": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "~6.7.5",
@@ -41,7 +44,7 @@
     "imagemin-svgo": "~5.2.0",
     "jade": "~1.11.0",
     "js-yaml": "~3.8.1",
-    "lodash": "~4.17.4",
+    "lodash": "^4.17.4",
     "minimist": "~1.2.0",
     "rimraf": "~2.6.1",
     "svg4everybody": "git+https://github.com/jonathantneal/svg4everybody.git",

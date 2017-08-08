@@ -1,11 +1,17 @@
+include _modules/organisms/slider/slider
 extends _layouts/base
 
 block title
   title= site.data.global.titleHome
 
 block content
-  h1 It works!
-    svg.icon
-       use(xlink:href='img/sprite.svg#icon-happy')
-    img(src="img/atomic-design.svg").svg-image
-  code.version Yeomas. Based on yeogurt generator. Atomic design present. Modify by Dimasion.
+  +slider({
+    sliderImg: [
+      'slider-1.jpg', 
+      'slider-2.jpg', 
+      'slider-3.jpg', 
+      'slider-4.jpg',
+      'slider-5.jpg',
+      'slider-6.jpg'
+      ]
+  })

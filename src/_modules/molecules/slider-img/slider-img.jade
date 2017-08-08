@@ -1,0 +1,8 @@
+mixin slider-img(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.image = spec.image || ''
+  
+  .img(class=spec.__class)&attributes(attributes)
+    .img__item(style="background-image:url(/img/"+spec.image+")")
+

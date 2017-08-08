@@ -27,8 +27,13 @@
 // Molecules
 //------------------------------
 @import '../_modules/molecules/menu/menu';
+@import '../_modules/molecules/slider-arrow/slider-arrow';
+@import '../_modules/molecules/slider-img/slider-img';
+@import '../_modules/molecules/slider-item/slider-item';
+
 
 //------------------------------
 // Organisms
 //------------------------------
 @import '../_modules/organisms/header/header';
+@import '../_modules/organisms/slider/slider';

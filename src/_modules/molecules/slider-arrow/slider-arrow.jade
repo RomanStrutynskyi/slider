@@ -1,0 +1,9 @@
+include ../../atoms/icon/icon
+
+mixin slider-arrow(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.arrow = spec.arrow || ''
+
+  button.arrow(class=spec.__class)&attributes(attributes)
+    +icon({ '__class': 'arrow__icon', icon: spec.arrow })
