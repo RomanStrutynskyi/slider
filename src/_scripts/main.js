@@ -5,12 +5,17 @@
 // ------------------------------
 // Imports
 // ------------------------------
+
 import $ from 'jquery';
-import pages from './../_data/pages.json';
+// export for others scripts to use
+window.$ = $;
+
 
 // Modules
 // import Link from './../_modules/molecules/menu/menu';
 
+// Organisms
+import Slider from './../_modules/organisms/slider/slider'
 // ------------------------------
 // Additional functionality
 // ------------------------------
@@ -30,6 +35,7 @@ $(() => {
   // Common scripts
 
   // Home page scripts
+  new Slider();
   // if (currentPage === pages.home.name) {
   //   new Link();
   // }

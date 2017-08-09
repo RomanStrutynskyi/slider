@@ -7,9 +7,15 @@ mixin slider(spec)
   - spec.__class = spec.__class || ''
   - spec.sliderImg = spec.sliderImg || []
   div.slider(class=spec.__class)&attributes(attributes)
+
     .slider__wrap 
       .slider__img
         each img in spec.sliderImg
           +slider-img({image: img})
-      +slider-arrow({__class:'slider__arrow arrow__right js-prev', arrow:'arrow-right'})
-      +slider-arrow({__class:'slider__arrow arrow__left js-next', arrow:'arrow-left'})
+    +slider-arrow({__class:'slider__arrow arrow__right js-prev', arrow:'arrow-right'})
+    +slider-arrow({__class:'slider__arrow arrow__left js-next', arrow:'arrow-left'})
+    +slider-item({__class:'js-list',
+      list: [
+       '' ,'' ,'' ,'' ,'' , ''
+      ]
+    })

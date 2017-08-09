@@ -1,1 +1,29 @@
 // slider-item styles
+.item{
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    width: 100%;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    &__list{
+        height: 15px;
+        width: 15px;
+        list-style: none;
+        border-radius: 50%;
+        background: $c-white;
+        margin: 0 10px;
+        cursor: pointer;
+        opacity: .8;
+        transition: $t-normal;
+        border: 2px solid transparent;
+        
+        &:hover{
+            border: 1px solid $c-dark;
+            opacity: 1;
+            transition: $t-normal;
+        }
+    }
+}

@@ -1,6 +1,9 @@
 mixin slider-item(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
+  - spec.list = spec.list || []
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the slider-item module
+  ul.item(class=spec.__class)&attributes(attributes)
+      each item in spec.list 
+        li.item__list= item
+          

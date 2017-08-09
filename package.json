@@ -2,7 +2,7 @@
   "name": "Template",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "~3.1.1",
+    "jquery": "^3.1.1",
     "nouislider": "^10.0.0",
     "touchswipe": "^1.6.0",
     "wnumb": "^1.1.0"
