@@ -7,7 +7,7 @@ export default class Slider {
     this.imgSelector = '.img';
     this.arrPrev = '.js-prev';
     this.arrNext = '.js-next';
-    this.listSelector = '.item__list';
+    // this.listSelector = '.item__list';
     this.init();
     
   }
@@ -18,18 +18,20 @@ export default class Slider {
     let translateWidth = 0;
     let widthWrap = $(this.slideWrap ).css("width","calc(100% * " + slideCount + ")");
     let widthImg = $(this.imgSelector ).css("width","calc(100% / " + slideCount + ")");
-    $(this.listSelector).click(() => {
+    let listBtn = 0;
+    $('.item').click(() => {
+        this.listBtn = $('.item__list').index();
 
-       let listBtn = $(this.listSelector).index();
-        // if (listBtn + 1 != sliderNumber) {
-        //   translateWidth = -$('.slider').width() * (listBtn);
-        //   $('.slider__wrap').css({
-        //       'transform': 'translate(' + translateWidth + 'px, 0)',
-        //   });
-          sliderNumber = listBtn ;
-          console.log(listBtn);
-      // }
+        if (listBtn + 1 != sliderNumber) {
+            translateWidth = -$('.slider').width() * (listBtn);
+            $('.slider__wrap').css({
+                'transform': 'translate(' + translateWidth + 'px, 0)',
+            });
+            sliderNumber = listBtn + 1;
+             console.log(sliderNumber);
+        }
     });
+
     $(this.arrPrev).click(() => {
       if (sliderNumber == 1 || sliderNumber <= 0 || sliderNumber > slideCount){
           translateWidth = -$('.slider').width() * (slideCount - 1);
@@ -59,6 +61,3 @@ export default class Slider {
     });
   }
 }
-
-
-       
