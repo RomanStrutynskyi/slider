@@ -75,3 +75,13 @@ If you using npm:
 
 ***Adding the `--debug` option to any gulp task displays extra debugging information (ex. data being loaded into your templates)***
 "# project2" 
+
+
+
+
+
+
+
+
+http://jsfiddle.net/jmore009/zR4qL/
+https://stackoverflow.com/questions/20649692/implement-nav-dots-to-my-slider

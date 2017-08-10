@@ -2,6 +2,7 @@ mixin slider-img(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
   - spec.image = spec.image || ''
+  - spec.dataImage = spec.dataImage || ''
   
-  .img(style="background-image:url(/img/"+spec.image+")")
+  .img(style="background-image:url(/img/"+spec.image+")" data-img= )
 

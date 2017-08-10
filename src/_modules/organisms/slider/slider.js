@@ -19,19 +19,22 @@ export default class Slider {
     let widthWrap = $(this.slideWrap ).css("width","calc(100% * " + slideCount + ")");
     let widthImg = $(this.imgSelector ).css("width","calc(100% / " + slideCount + ")");
     let listBtn = 0;
-    $('.item').click(() => {
-        this.listBtn = $('.item__list').index();
-
-        if (listBtn + 1 != sliderNumber) {
+    $(document).ready(() =>{
+    $('.item__list').click(() => {
+        this.listBtn = $(this).index();
+console.log(listBtn);
+        if ((listBtn + 1) != sliderNumber) {
+            console.log(listBtn);
             translateWidth = -$('.slider').width() * (listBtn);
-            $('.slider__wrap').css({
+console.log(listBtn);
+            $('.slider__wrap').css({    
                 'transform': 'translate(' + translateWidth + 'px, 0)',
             });
             sliderNumber = listBtn + 1;
-             console.log(sliderNumber);
+            console.log(sliderNumber + '<=');
         }
     });
-
+});
     $(this.arrPrev).click(() => {
       if (sliderNumber == 1 || sliderNumber <= 0 || sliderNumber > slideCount){
           translateWidth = -$('.slider').width() * (slideCount - 1);
