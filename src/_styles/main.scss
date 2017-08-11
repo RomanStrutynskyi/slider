@@ -23,17 +23,17 @@
 // Atoms
 //------------------------------
 @import '../_modules/atoms/icon/icon';
+@import '../_modules/atoms/tab/tab';
 //------------------------------
 // Molecules
 //------------------------------
-@import '../_modules/molecules/menu/menu';
 @import '../_modules/molecules/slider-arrow/slider-arrow';
 @import '../_modules/molecules/slider-img/slider-img';
 @import '../_modules/molecules/slider-item/slider-item';
-
-
+@import '../_modules/molecules/tabby/tabby';
 //------------------------------
 // Organisms
 //------------------------------
-@import '../_modules/organisms/header/header';
 @import '../_modules/organisms/slider/slider';
+@import '../_modules/organisms/rangle-tabs/rangle-tabs';
+

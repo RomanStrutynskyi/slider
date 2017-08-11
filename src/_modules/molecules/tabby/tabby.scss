@@ -1,0 +1,46 @@
+// tabby styles
+.tabby{
+    background: #EDEDED;
+    border: 2px solid #D0D0D0;
+    border-radius: 5px;
+    &__tabs{
+        // border: 1px solid orange;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    &__tab{
+    padding: 10px;
+    width: 100px;    
+    
+    background: #EDEDED;
+    color: #858585;
+    transition: $t-normal;
+    cursor: pointer;    
+    
+        &--active{
+            background: #E7E7E7;
+            color: $c-dark;
+            cursor: default;
+        }
+        &:hover{
+            color: $c-dark;
+            transition: $t-normal;
+        }
+    }
+
+    &__contents{
+            background: #E7E7E7;
+    }
+    &__content{
+        padding: 20px;
+        line-height: 1.5;
+        text-transform: lowercase;
+        font-size: 15px;
+        // border: 1px solid greenyellow;
+  
+            display: block;
+        
+    }
+    
+}

@@ -1,0 +1,10 @@
+mixin tab(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.name = spec.name || ''
+  - spec.text = spec.text || ''
+  - spec.rootClass = spec.rootClass || ''
+  .tab(class=spec.__class)&attributes(attributes)
+    .tab__text=spec.text
+      
+   

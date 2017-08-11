@@ -1,4 +1,6 @@
 include _modules/organisms/slider/slider
+include _modules/organisms/rangle-tabs/rangle-tabs
+
 extends _layouts/base
 
 block title
@@ -13,7 +15,6 @@ block content
       'slider-4.jpg',
       'slider-5.jpg',
       'slider-6.jpg',
-
-      ],
-
-  })
+      ]
+    })
+  +rangle-tabs()

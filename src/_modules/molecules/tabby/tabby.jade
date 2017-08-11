@@ -1,0 +1,14 @@
+include ../../atoms/tab/tab
+mixin tabby(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.tabs = spec.tabs || []
+
+  div.tabby(class=spec.__class)&attributes(attributes)
+    .tabby__tabs
+      each tab in spec.tabs
+        a(href= tab.id).tabby__tab( class= tab.active ? 'tabby__tab--active' : '')= tab.name
+    .tabby__contents
+      each tab in spec.tabs
+        .tabby__content(id=tab.id)
+          +tab(tab.rangeOptions)

@@ -16,6 +16,8 @@ window.$ = $;
 
 // Organisms
 import Slider from './../_modules/organisms/slider/slider'
+import Tabby from './../_modules/organisms/rangle-tabs/rangle-tabs'
+
 // ------------------------------
 // Additional functionality
 // ------------------------------
@@ -36,6 +38,7 @@ $(() => {
 
   // Home page scripts
   new Slider();
+  new Tabby();
   // if (currentPage === pages.home.name) {
   //   new Link();
   // }
