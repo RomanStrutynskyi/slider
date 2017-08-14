@@ -23,6 +23,10 @@
             color: $c-dark;
             cursor: default;
         }
+        &--disabled {
+        pointer-events: none;
+        display: none;
+        }
         &:hover{
             color: $c-dark;
             transition: $t-normal;

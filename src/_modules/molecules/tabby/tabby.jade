@@ -7,8 +7,8 @@ mixin tabby(spec)
   div.tabby(class=spec.__class)&attributes(attributes)
     .tabby__tabs
       each tab in spec.tabs
-        a(href= tab.id).tabby__tab( class= tab.active ? 'tabby__tab--active' : '')= tab.name
+        .tabby__tab(data-tab=tab.id class= tab.active ? 'tabby__tab--active' : '')= tab.name
     .tabby__contents
       each tab in spec.tabs
-        .tabby__content(id=tab.id)
+        .tabby__content(data-tab=tab.id)
           +tab(tab.rangeOptions)

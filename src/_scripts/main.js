@@ -16,7 +16,10 @@ window.$ = $;
 
 // Organisms
 import Slider from './../_modules/organisms/slider/slider'
-import Tabby from './../_modules/organisms/rangle-tabs/rangle-tabs'
+import Rangle from './../_modules/organisms/rangle-tabs/rangle-tabs'
+//Molecules 
+import Tabs from './../_modules/molecules/tabby/tabby'  
+
 
 // ------------------------------
 // Additional functionality
@@ -38,7 +41,8 @@ $(() => {
 
   // Home page scripts
   new Slider();
-  new Tabby();
+  new Tabs();
+  new Rangle();
   // if (currentPage === pages.home.name) {
   //   new Link();
   // }

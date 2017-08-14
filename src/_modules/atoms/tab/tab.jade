@@ -3,8 +3,9 @@ mixin tab(spec)
   - spec.__class = spec.__class || ''
   - spec.name = spec.name || ''
   - spec.text = spec.text || ''
-  - spec.rootClass = spec.rootClass || ''
-  .tab(class=spec.__class)&attributes(attributes)
-    .tab__text=spec.text
-      
+  - spec.rootlCass = spec.rootClass || ''
+  .tab(class=spec.rootlCass)
+    .tab__content.js-tab(class=spec.__class)&attributes(attributes)  
+      .tab__text= spec.text 
+    //- input.tab__input(type="hidden" name=spec.name)
    
